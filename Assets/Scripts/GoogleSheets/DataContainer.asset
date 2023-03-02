@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7dbf1c0fec575804da4f7cc57555de14, type: 3}
+  m_Name: DataContainer
+  m_EditorClassIdentifier: 
+  documentID: 1IuOGdrypQIqx2A6-WLI0JMt8seMqhb4VvWWmGz0xSIA
+  gameData:
+  - Id: benjamin
+    SomeFloat: 1
+    SomeInt: 5
+    SomeString:
+    - 10
+    - 20
+    - 30
+    - 40
+    gameState: 2
+    allState: 0200000001000000
+  - Id: aaaa
+    SomeFloat: 2
+    SomeInt: 3
+    SomeString:
+    - 6
+    gameState: 1
+    allState: 0200000000000000
+  - Id: bbb
+    SomeFloat: 1
+    SomeInt: 1
+    SomeString:
+    - 3
+    gameState: 0
+    allState: 
+  - Id: ccc
+    SomeFloat: 4
+    SomeInt: 2
+    SomeString:
+    - 2
+    gameState: 0
+    allState: 
+  Test1Data:
+  - Id: A
+    SomeFloat: 1
+    SomeInt: 5
+    SomeString:
+    - 3
+    - 3
+    - 3
+    - 4
+    - 3
+  - Id: B
+    SomeFloat: 2
+    SomeInt: 3
+    SomeString:
+    - 6
+  - Id: X
+    SomeFloat: 1
+    SomeInt: 1
+    SomeString:
+    - 3
+  - Id: SD
+    SomeFloat: 4
+    SomeInt: 2
+    SomeString:
+    - 2
+  Test2Data:
+  - Id: Test2-1
+    SomeFloat: 1.2
+    SomeInt: 5
+    SomeString:
+    - Abc
+  - Id: Test2-2
+    SomeFloat: 2.2
+    SomeInt: 3
+    SomeString:
+    - CCC
