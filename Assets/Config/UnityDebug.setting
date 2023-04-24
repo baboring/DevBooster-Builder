@@ -1,0 +1,22 @@
+{
+	"Version" : 1.0,
+	"Info" : "<<<< Unity RoomServer Configuration information >>>>>",
+
+	"RoomServer": {
+		"localhost" : true,
+		"name" : "Unity RoomServer", 
+		"ip" : "127.0.0.1", 
+		"public_ip" : "127.0.0.1", 
+		"port" : 30001, 
+		"target_frame" : -1, 
+		"max_connection" : 1000, 
+		"max_group_count" : 10,
+		"max_group_player_count" : 2,
+	},
+	
+	"LobbyServer": {
+		"ip" : "127.0.0.1", 
+		"port" : 20001, 
+	},	
+	
+}

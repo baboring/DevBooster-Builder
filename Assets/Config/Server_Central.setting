@@ -1,0 +1,50 @@
+{
+	"Version" : 1.0,
+	"Info" : "<<<< Unity CentralServer Configuration information >>>>>",
+
+	"CentralServer": {
+		"localhost" : true,
+		"name" : "Unity Central", 
+		"ip" : "127.0.0.1", 
+		"public_ip" : "127.0.0.1", 
+		"port" : 15001, 
+		"target_frame" : -1, 
+		"max_connection" : 100, 
+		"quit_user_delete_time" : 600, 
+		"quit_user_Init_time" : 620, 
+		"reset_interval" : "01:00:00", 
+	},
+	
+	"DBList": [
+		{
+			"db_id" : "Game",
+			"db_ip_" : "192.168.0.201",
+			"db_ip" : "127.0.0.1",
+			"db_port" : 3306,
+			"db_user" : "root",
+			"db_password" : "apmsetup",
+			"db_name" : "project_s_local_game",
+			"db_thread" : 1,
+		} ,
+		{
+			"db_id" : "Service",
+			"db_ip_" : "192.168.0.201",
+			"db_ip" : "127.0.0.1",
+			"db_port" : 3306,
+			"db_user" : "root",
+			"db_password" : "apmsetup",
+			"db_name" : "project_s_local_service",
+			"db_thread" : 1,
+		} ,
+		{
+			"db_id" : "Log",
+			"db_ip_" : "192.168.0.201",
+			"db_ip" : "127.0.0.1",
+			"db_port" : 3306,
+			"db_user" : "root",
+			"db_password" : "apmsetup",
+			"db_name" : "project_s_local_log",
+			"db_thread" : 1,
+		} ,
+	],
+}

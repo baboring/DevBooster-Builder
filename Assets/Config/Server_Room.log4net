@@ -1,0 +1,14 @@
+﻿<log4net>
+	
+	<root>
+		<level value="ALL" />
+		<!-- no appender! -->
+	</root>
+	<logger name="Dev" additivity="false">
+		<level value="DEBUG" />
+	</logger>
+	<logger name="Error" additivity="false">
+		<level value="INFO" />
+	</logger>
+
+</log4net>

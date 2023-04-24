@@ -1,0 +1,57 @@
+{
+	"Version" : 1.0,
+	"Info" : "<<<< Unity LobbyServer Configuration information >>>>>",
+	
+	"LobbyServer": {
+		"localhost" : true,
+		"name" : "Unity Lobby", 
+		"ip" : "127.0.0.1", 
+		"public_ip" : "127.0.0.1", 
+		"port" : 20001, 
+		"target_frame" : -1, 
+		"max_connection" : 5000, 
+		"max_user_count" : 3000, 
+		"MatchPerFrame" : 1000,
+		"weekly_init_day" : 1,
+		"gcm_project_id" : "1071523382781",
+		"urlKakao" : "https://gameapi.kakao.com/payment_v1/payments.json",
+		"kakao_client_id" : "91623598320244432",
+		"kakao_secret_key" : "323c3595c8141e5e6908b910f357807367cf94f74a403f31c44096616ec610d3",
+	},
+
+	"CentralServer": {
+		"ip" : "192.168.0.201", 
+		"port" : 15001,
+	},
+	
+	"DBList": [
+		{
+			"db_id" : "Game",
+			"db_ip" : "192.168.0.201",
+			"db_port" : 3306,
+			"db_user" : "root",
+			"db_password" : "apmsetup",
+			"db_name" : "project_s_local_game",
+			"db_thread" : 5,
+		} ,
+		{
+			"db_id" : "Log",
+			"db_ip" : "192.168.0.201",
+			"db_port" : 3306,
+			"db_user" : "root",
+			"db_password" : "apmsetup",
+			"db_name" : "project_s_local_log",
+			"db_thread" : 2,
+		} ,
+		{
+			"db_id" : "Service",
+			"db_ip" : "192.168.0.201",
+			"db_port" : 3306,
+			"db_user" : "root",
+			"db_password" : "apmsetup",
+			"db_name" : "project_s_local_service",
+			"db_thread" : 1,
+		} ,
+	],
+	
+}

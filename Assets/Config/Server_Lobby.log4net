@@ -1,0 +1,70 @@
+﻿<!-- 샘플 log4net config 파일 -->
+
+<log4net>
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<appender name="DevFileAppender" type="log4net.Appender.RollingFileAppender">
+		<file value="logs/lobby_server_dev.txt" />
+		<appendToFile value="true" />
+		<rollingStyle value="Size" />
+		<maxSizeRollBackups value="10" />
+		<maximumFileSize value="1024KB" />
+		<staticLogFileName value="true" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date %-5level %message%newline" />
+			<!-- %file %line %method -->
+		</layout>
+	</appender>
+	
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<appender name="DBFileAppender" type="log4net.Appender.RollingFileAppender">
+		<file value="logs/lobby_server_DB.txt" />
+		<appendToFile value="true" />
+		<rollingStyle value="Size" />
+		<maxSizeRollBackups value="10" />
+		<maximumFileSize value="1024KB" />
+		<staticLogFileName value="true" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date %-5level %message%newline" />
+			<!-- %file %line %method -->
+		</layout>
+	</appender>
+	
+
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<appender name="ErrorFileAppender" type="log4net.Appender.RollingFileAppender">
+		<file value="logs/lobby_server_error.txt" />
+		<appendToFile value="true" />
+		<rollingStyle value="Size" />
+		<maxSizeRollBackups value="10" />
+		<maximumFileSize value="1024KB" />
+		<staticLogFileName value="true" />
+		<layout type="log4net.Layout.PatternLayout">
+			<conversionPattern value="%date %-5level %message at %location%newline" />
+			<!-- %file %line %method -->
+		</layout>
+	</appender>
+
+		
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<root>
+		<level value="ALL" />
+		<!-- no appender! -->
+	</root>
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<logger name="Dev" additivity="false">
+		<level value="DEBUG" />
+		<appender-ref ref="DevFileAppender" />
+	</logger>
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<logger name="DB" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="DBFileAppender" />
+	</logger>
+	<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+	<logger name="Error" additivity="false">
+		<level value="INFO" />
+		<appender-ref ref="ErrorFileAppender" />
+		<appender-ref ref="DevFileAppender" />
+	</logger>
+
+</log4net>
